@@ -5,12 +5,10 @@ My personal dotfiles (bash, git, vim)
 ## Installation
 
     $ git clone git://github.com/aflash/dotfiles.git
-    
-Vundle plugin is installed as a git submodule. Check this out by running the following commands:
+    $ ./dofiles/install.sh
 
-    $ cd dotfiles
-    $ git submodule init
-    $ git submodule update
+start vi to update vundle packages
+    :BundleInstall
 
 ## VIM
 
