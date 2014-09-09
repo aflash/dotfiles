@@ -63,7 +63,7 @@ colorscheme herald
 set shortmess+=I
 
 " NERD Tree
-map <F5> :NERDTreeToggle<cr>
+map <F2> :NERDTreeToggle<cr>
 let NERDTreeIgnore = ['\~$', '.OB$', '.gz$', '.vim$']
 let NERDTreeQuitOnOpen = 1
 let NERDTreeShowHidden = 0
