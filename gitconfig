@@ -1,9 +1,9 @@
 [user]
-	name = Tom Fenton
-	email = tom.fenton@xtra.co.nz
+	name = Aaron Flaszynski
+	email = aaron@ncs.co.nz
 
 [alias]
-  co = checkout
+	co = checkout
 	st = status
 
 [color]
@@ -12,13 +12,14 @@
 	status = auto
 
 [github]
-	user = tfentonz
+	user = aflash
 
 [core]
 	excludesfile = ~/.gitignore_global
+	trustctime = false
 
 [diff]
 	external = ~/bin/git-diff-cmd.sh
 
 [push]
-	default = matching
+	default = simple
