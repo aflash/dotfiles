@@ -4,7 +4,7 @@ My personal dotfiles (bash, git, vim)
 
 ## Installation
 
-    $ git clone git://github.com/tfentonz/dotfiles.git
+    $ git clone git://github.com/aflash/dotfiles.git
     
 Vundle plugin is installed as a git submodule. Check this out by running the following commands:
 
