@@ -22,4 +22,4 @@
 	external = ~/bin/git-diff-cmd.sh
 
 [push]
-	default = simple
+	default = matching
