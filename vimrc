@@ -62,6 +62,12 @@ colorscheme herald
 " Don't give the intro message when starting Vim
 set shortmess+=I
 
+" set guifont to be bigger
+set guifont=Menlo\ Regular:h16
+
+"set mouse scroll
+set mouse=a
+
 " NERD Tree
 map <F2> :NERDTreeToggle<cr>
 let NERDTreeIgnore = ['\~$', '.OB$', '.gz$', '.vim$']
@@ -74,6 +80,12 @@ au BufNewFile,BufRead *.C    set filetype=cobol
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.rake set filetype=ruby
 au BufNewFile,BufRead *.sql  set filetype=mysql
+
+" Highlight trailing whitespace
+match ErrorMsg '\s\+$'
+
+" remove trailing whitespaces
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
 
 " Toggle unprintable characters
 map <leader>l :set list!<cr>
