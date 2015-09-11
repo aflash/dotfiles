@@ -1,19 +1,26 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
 
-Bundle 'gmarik/vundle'
+call vundle#begin()
 
-Bundle 'groenewege/vim-less'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'kien/ctrlp.vim'
-Bundle 'msanders/snipmate.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tfentonz/vim-magiq'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-surround'
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
+Plugin 'groenewege/vim-less'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'kien/ctrlp.vim'
+Plugin 'msanders/snipmate.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tfentonz/vim-magiq'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-surround'
+Plugin 'yaymukund/vim-rabl'
+
+call vundle#end()
 
 filetype plugin indent on
 
@@ -67,6 +74,8 @@ set guifont=Menlo\ Regular:h16
 
 "set mouse scroll
 set mouse=a
+"set clipbord to be used elsewhere
+set clipboard=unnamed
 
 " NERD Tree
 map <F2> :NERDTreeToggle<cr>
@@ -103,7 +112,20 @@ map <leader>o :!rm -f %.OB<cr>
 map <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
 
 " CtrlP
+let g:ctrlp_custom_ignore = { 'dir': 'db/sphinx\|node_module\|vendor/cache' }
 let g:ctrlp_working_path_mode = 'a'
+
+" Syntastic
+map <leader>j :SyntasticToggleMode<cr>
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " Ruby on Rails
 let rails_menu = 2
