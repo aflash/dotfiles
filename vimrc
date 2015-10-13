@@ -19,6 +19,7 @@ Plugin 'tfentonz/vim-magiq'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
 Plugin 'yaymukund/vim-rabl'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()
 
