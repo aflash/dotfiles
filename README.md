@@ -6,8 +6,11 @@ My personal dotfiles (bash, git, vim)
 
     $ git clone git://github.com/aflash/dotfiles.git
     $ ./dofiles/install.sh
+    
+#### Have had issues with Vundle.vim not install so can run this to fix.
+    $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-start vi to update vundle packages
+#### start vi to update vundle packages
     :BundleInstall
 
 ## VIM
