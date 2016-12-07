@@ -18,8 +18,5 @@
 	excludesfile = ~/.gitignore_global
 	trustctime = false
 
-[diff]
-      external = ~/bin/git-diff-cmd.sh
-
 [push]
 	default = matching
