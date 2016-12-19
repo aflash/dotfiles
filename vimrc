@@ -9,12 +9,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugin 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
-<<<<<<< HEAD
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
-=======
->>>>>>> 533350ae7722154a18e4e8ea288f7b68f2d6c3f0
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
