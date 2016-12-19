@@ -9,9 +9,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugin 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
+<<<<<<< HEAD
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Bundle 'edkolev/tmuxline.vim'
+=======
+>>>>>>> 533350ae7722154a18e4e8ea288f7b68f2d6c3f0
 Plugin 'groenewege/vim-less'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'kien/ctrlp.vim'
@@ -117,6 +120,9 @@ map <leader>o :!rm -f %.OB<cr>
 
 " Clean whitespace
 map <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
+
+" change ruby hash 1.8x to 1.9x
+map <leader>crh :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<cr>
 
 " CtrlP
 let g:ctrlp_custom_ignore = { 'dir': 'db/sphinx\|node_module\|vendor/cache' }
