@@ -96,6 +96,7 @@ au BufNewFile,BufRead *.C    set filetype=cobol
 au BufNewFile,BufRead *.less set filetype=less
 au BufNewFile,BufRead *.rake set filetype=ruby
 au BufNewFile,BufRead *.sql  set filetype=mysql
+au BufNewFile,BufRead *.axlsx  set filetype=ruby
 
 " Highlight trailing whitespace
 match ErrorMsg '\s\+$'
