@@ -26,6 +26,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'sickill/vim-monokai'
 
 call vundle#end()
 
@@ -71,7 +72,7 @@ set listchars=tab:▸\ ,eol:¬
 " Color scheme (Terminal)
 syntax on
 set background=dark
-colorscheme herald
+colorscheme molokai
 
 " Don't give the intro message when starting Vim
 set shortmess+=I
@@ -157,3 +158,6 @@ map <leader>vs :Rview show<cr>
 
 " Edit vimrc
 nmap <leader>ev <C-w>s<C-w>j<C-w>L:e $MYVIMRC<cr>
+
+" Change comment to greem
+:highlight Comment ctermfg=green
