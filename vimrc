@@ -81,7 +81,7 @@ set shortmess+=I
 set guifont=Menlo\ Regular:h16
 
 "set mouse scroll
-set mouse=a
+"set mouse=a
 "set clipbord to be used elsewhere
 set clipboard=unnamed
 
