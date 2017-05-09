@@ -27,6 +27,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'Quramy/tsuquyomi'
 Plugin 'sickill/vim-monokai'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()
 
