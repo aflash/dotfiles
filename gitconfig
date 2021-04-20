@@ -1,6 +1,6 @@
 [user]
 	name = Aaron Flaszynski
-	email = aaron@vistab.co.nz
+	email = aaronflaszynski@gmail.com
 
 [alias]
 	co = checkout
@@ -19,4 +19,7 @@
 	trustctime = false
 
 [push]
-	default = matching
+	default = simple
+
+[commit]
+        verbose = true

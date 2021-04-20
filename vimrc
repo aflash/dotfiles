@@ -1,37 +1,27 @@
 set nocompatible
-filetype off
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
+Plug 'editorconfig/editorconfig-vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'dense-analysis/ale'
+Plug 'itspriddle/vim-shellcheck'
+Plug 'vimwiki/vimwiki'
+Plug 'pearofducks/ansible-vim'
+Plug 'groenewege/vim-less'
+Plug 'kchmck/vim-coffee-script'
+Plug 'kien/ctrlp.vim'
+Plug 'msanders/snipmate.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'tfentonz/vim-magiq'
+Plug 'tpope/vim-rails'
+Plug 'junegunn/vim-plug'
+" Plug 'morhetz/gruvbox'
+Plug 'tomasr/molokai'
 
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" Plugin 'powerline/powerline', { 'rtp': 'powerline/bindings/vim' }
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Bundle 'edkolev/tmuxline.vim'
-Plugin 'groenewege/vim-less'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'kien/ctrlp.vim'
-Plugin 'msanders/snipmate.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'tfentonz/vim-magiq'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-surround'
-Plugin 'yaymukund/vim-rabl'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'Quramy/tsuquyomi'
-Plugin 'sickill/vim-monokai'
-Plugin 'Yggdroot/indentLine'
-
-call vundle#end()
-
-filetype plugin indent on
+call plug#end()
 
 " Security
 set modelines=0
@@ -133,12 +123,6 @@ map <leader>j :SyntasticToggleMode<cr>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
-let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '

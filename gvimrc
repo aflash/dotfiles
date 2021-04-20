@@ -1,8 +1,8 @@
 " Hide toolbar
 set guioptions-=T
-set lines=44 columns=100
+set lines=100 columns=88
 
-set background=light
-colorscheme mac_classic
+set background=dark
+colorscheme molokai
 
-set guifont=Monaco:h16
+set guifont=Monaco:h14
