@@ -44,6 +44,7 @@ brew install --cask spotify
 brew install --cask vlc
 brew install --cask zoom
 brew install --cask keepassxc
+brew install --cask visual-studio-code
 
 
 ## MAGIQ
