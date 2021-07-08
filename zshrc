@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# ~/.dircolors/themefile
+# eval $(gdircolors ~/.dircolors/dircolors.256aaron)
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -107,6 +110,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias ls='gls --color=auto'
+# alias ll='ls -al'
 alias http='http --style monokai'
 alias lrt='ls -lrt'
 alias lt='ls -lt'
@@ -119,6 +124,8 @@ alias utcdate='TZ=utc date'
 alias tmuxconf='vim ~/.tmux.conf'
 alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
+alias magiq='cd /Users/aaron/OneDrive/Flashcorp\ Ltd/Sites/MAGIQ/'
+alias tdc='cd /Users/aaron/OneDrive/Flashcorp\ Ltd/Sites/Taupo/'
 
 # Docker
 alias db='docker build'
@@ -126,6 +133,9 @@ alias de='docker exec -ti'
 alias di='docker images'
 alias dp='docker push'
 alias dps='docker ps'
+
+# VPN commands
+alias vpnc='sudo openfortivpn -c'
 
 # Neovim
 # alias vim='nvim'
