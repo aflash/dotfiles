@@ -12,7 +12,9 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/aaron/.oh-my-zsh"
+# export ZSH="~/.oh-my-zsh"
+export ZSH="/Users/aaronflaszynski/.oh-my-zsh"
+# export ZSH="/Users/aaron/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -81,7 +83,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git vi-mode web-search z zsh-syntax-highlighting zsh-autosuggestions lol thefuck)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -117,7 +119,7 @@ alias lrt='ls -lrt'
 alias lt='ls -lt'
 alias lth='ls -lt | head'
 alias ping='ping -c 4'
-alias pubkey='cat ~/.ssh/aaron-rsa-key.ppk.pub'
+alias pubkey='cat ~/.ssh/id_rsa.pub'
 alias sshconfig='vim ~/.ssh/config'
 alias tree='tree -I node_modules'
 alias utcdate='TZ=utc date'
@@ -126,6 +128,7 @@ alias vimrc='vim ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 alias magiq='cd /Users/aaron/OneDrive/Flashcorp\ Ltd/Sites/MAGIQ/'
 alias tdc='cd /Users/aaron/OneDrive/Flashcorp\ Ltd/Sites/Taupo/'
+alias prettypy='python -m json.tool'
 
 # Docker
 alias db='docker build'
@@ -142,6 +145,12 @@ alias vpnc='sudo openfortivpn -c'
 # alias vi='nvim'
 # alias iv='nvim'
 
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+# export LSCOLORS="exfxcxdxfxegedabagacad"
+export LS_COLORS='di=94:ln=35:so=32:pi=33:ex=35:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+
 unsetopt share_history
 
 PROMPT='${ret_status} %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)'
@@ -152,3 +161,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
